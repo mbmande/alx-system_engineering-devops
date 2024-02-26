@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# it iterate from 1 - 10 printing "best school" except for 4th and 8th loop
+# which will print "bad luck" for the 4th and print "good luck" for the 8th
+
+number=1
+
+while [ $number -lt 11 ]
+do
+	if [ $number -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $number -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((number++))
+done
