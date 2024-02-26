@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# it prints "best school" 10 times if the iteration is not equals to 9
+# if it's the it prints hi instead
+
+number=0
+
+while [ $number -lt 10 ]
+do
+	if [ $number -eq 9 ]
+	then
+		echo "Hi"
+	fi
+	echo "Best School"
+	((number++))
+done
