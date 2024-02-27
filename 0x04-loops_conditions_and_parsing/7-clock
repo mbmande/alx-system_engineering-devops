@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# ====================
+# =============
+# ===========
+# ======
+locachi=0
+
+while [ $locachi -le 12 ]
+do
+	echo "Hour: $locachi"
+	kasa=1
+	while [ $kasa -le 59 ]
+	do
+		echo "$kasa"
+	 	((kasa++))
+ 	done
+	((locachi++))
+done
+
